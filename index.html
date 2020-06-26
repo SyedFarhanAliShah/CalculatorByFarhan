@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <h2 style="text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white;">Calculator</h2>
+        <div>
+            <input id="result" type="text" class="inputDiv">
+        </div>
+        <div>
+            <button class="clearBtn" onclick="clearResult()">Clear</button>
+        </div>
+        <div class="bodyDiv">
+            <div class="btnDiv">
+              <center>  <button class="btn" onclick="getNum('7')">7</button>
+                <button class="btn" onclick="getNum('8')">8</button>
+                <button class="btn" onclick="getNum('9')">9</button>
+                <button class="btn" style="background-color:#FF9500; color:white;" class="hoverr" onclick="getNum('*')">*</button></center>
+        </div>
+        <div class="btnDiv">
+            <center><button class="btn" onclick="getNum('4')">4</button>
+            <button class="btn" onclick="getNum('5')">5</button>
+            <button class="btn" onclick="getNum('6')">6</button>
+            <button class="btn" style="background-color:#FF9500; color:white;" class="hoverr" onclick="getNum('-')">-</button></center>
+        </div>
+        <div class="btnDiv">
+            <center><button class="btn" onclick="getNum('1')">1</button>
+            <button class="btn" onclick="getNum('2')">2</button>
+            <button class="btn" onclick="getNum('3')">3</button>
+            <button class="btn" style="background-color:#FF9500; color:white;" onclick="getNum('+')">+</button></center>
+        </div>
+        <div class="btnDiv">
+            <center><button class="hov" style="width: 46%; margin-top: 10px; height: 30px; font-size: 22px;" onclick="getNum('0')">0</button>
+            <button class="hoverr"  onclick="getResult()" style="width: 46%; margin-top: 10px; height: 30px; background-color:#FF9500; color: white; font-size: 22px;">=</button></center>
+        </div>
+        <p style="text-align: right; color: white; font-size: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 10px;">By: Syed Farhan Ali Shah</p>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
